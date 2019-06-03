@@ -1,0 +1,192 @@
+
+/* COLOR PALETTE
+
+Background/Tan - #FCE6C8;
+Brown: #3E2A2E;
+Red: #B54231;
+Background/Off-White: #FFFEF8;
+Background/Pink: #F7D7C7;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+body {
+	background-color: #FFFEF8;
+	font-family: Poppins Light;
+}
+
+header, footer {
+	text-align: center;
+}
+
+.gone {
+	display: none;
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+	background-color: #FFFEF8;
+}
+
+h1 {
+}
+
+
+h2 {
+}
+
+section {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.column {
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.copyright {
+	font-size: 8px;
+	padding-top: 15px;
+	opacity: .6;
+}
+
+.homepage-graphic {
+	width: 80%;
+	margin: auto;
+	display: block;
+	padding-bottom: 10px;
+}
+
+header img {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	width: 35%;
+	margin: auto;
+}
+
+footer a {
+	dislay: inline-block;
+	letter-spacing: 1px;
+	font-size: 10px;
+	padding: 10px;
+	color: #3E2A2E;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #B54231;
+}
+
+/* START STICKY FOOTER */
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+
+/* End Sticky Footer */
+
+/* Start Navigation */
+
+nav {
+	font-family: Poppins Light;
+	font-size: 14px;
+	padding-bottom: 25px;
+}
+
+nav ul {
+  text-align:center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+	font-family: Poppins Light;
+	list-style-type: none;
+	color: #3E2A2E;
+	padding: 5px;
+	letter-spacing: 1px;
+}
+
+nav ul li a:link, nav ul li a:hover{
+	text-decoration: none;
+	color: #B54231;
+}
+
+
+/* Animations */
+
+	/* Fade-in */
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 750px) {
+
+
+.gone {
+	display: block;
+}
+
+	section {
+	  max-width: 1000px;
+	  margin: 0 auto;
+	  display: flex;
+	}
+
+	.column {
+	  margin: 15px;
+	  flex-grow: 1;
+	  flex-shrink: 1;
+	}
+
+	.copyright {
+		font-size: 12px;
+	}
+
+	.homepage-graphic {
+		width: 80%;
+		margin: auto;
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	header img {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 15%;
+		margin: auto;
+	}
+
+	nav {
+		padding-bottom: 10px;
+	}
+
+}

@@ -1,0 +1,19 @@
+/* COLOR PALETTE
+
+#E8CFC4 - Light Pink
+#BB6D3C - Burnt Orange
+#F0EAE2 - Neutral (darker)
+#FAF7F2 - Neutral (lighter)
+#E73C30 - Bright
+#595959 - Text/Gray
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}

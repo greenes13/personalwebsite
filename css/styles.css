@@ -1,0 +1,199 @@
+
+/* COLOR PALETTE
+
+Background/Tan - #FCE6C8;
+Brown: #3E2A2E;
+Red: #B54231;
+Background/Off-White: #FFFEF8;
+Background/Pink: #F7D7C7;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+body {
+	background: linear-gradient(270deg, #FCE6C8,#F7D7C7, #F28441, #FCE6C8);
+	background-size: 400% 400%;
+		-webkit-animation: GradientBackground 10s ease 3000ms;
+		-moz-animation: GradientBackground 10s ease 3000ms;
+		animation: GradientBackground 10s ease 3000ms;
+}
+
+header, footer, nav {
+	text-align: center;
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+	background: linear-gradient(270deg, #FCE6C8, #F7D7C7, #F28441, #FCE6C8);
+	background-size: 400% 400%;
+		-webkit-animation: GradientBackground 10s ease 3000ms;
+		-moz-animation: GradientBackground 10s ease 3000ms;
+		animation: GradientBackground 10s ease 3000ms;
+}
+
+h1 {
+	font-family: Abril Fatface;
+	font-size: 40px;
+	color: #3E2A2E;
+	letter-spacing: 5px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+h2 {
+	font-family: Poppins Light;
+	font-size: 20px;
+	color: #3E2A2E;
+}
+
+header img {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	width: 20%;
+	margin: auto;
+}
+
+footer a {
+	dislay: inline-block;
+	letter-spacing: 1px;
+	font-size: 12px;
+	padding: 10px;
+	color: #3E2A2E;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #B54231;
+}
+
+/* START STICKY FOOTER */
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+
+/* End Sticky Footer */
+
+/* Start Navigation */
+
+nav {
+	padding-top: 10px;
+	font-family: Poppins Light;
+	font-size: 18px;
+	font-style: italic;
+}
+
+nav ul li a {
+	font-family: Poppins Light;
+	list-style-type: none;
+	color: #3E2A2E;
+}
+
+nav ul li a:link, nav ul li a:hover{
+	text-decoration: none;
+	font-family: Poppins Light;
+	color: #B54231;
+}
+
+
+/* Animations */
+
+/* Landing Page H1 */
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Gradient */
+
+@-webkit-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Fade-in */
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+
+	header img {
+		padding-top: 110px;
+		width: 40%;
+		margin: auto;
+	}
+
+	nav a {
+		font-family: Poppins Light;
+	}
+}
